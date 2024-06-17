@@ -1,4 +1,5 @@
 import { Tabs } from 'expo-router';
+import { Image, StyleSheet, Platform, Text, View, Button, TextInput } from 'react-native';
 import React from 'react';
 
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
@@ -9,6 +10,7 @@ export default function TabLayout() {
   const colorScheme = useColorScheme();
 
   return (
+    
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
@@ -27,6 +29,15 @@ export default function TabLayout() {
         name="explore"
         options={{
           title: 'Explore',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="test"
+        options={{
+          title: 'test',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
           ),
