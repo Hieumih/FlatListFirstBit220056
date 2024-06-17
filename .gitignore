@@ -21,6 +21,6 @@ expo-env.d.ts
 
 
 # git commit -m "first commit"
-# git branch -M main
 # git remote add origin https://github.com/Hieumih/FlatListFirstBit220056.git
+# git branch -M main
 # git push -u origin main
