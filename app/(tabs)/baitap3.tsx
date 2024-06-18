@@ -7,7 +7,7 @@ const BaiTap3 = () => {
         <View style={styles.container}>
             <Square title='Square 1' bgcolor='#7ce0f9'/>
             <Square title='Square 2' bgcolor='#4cc2c2'/>
-            <Square title='Square 3' bgcolor='ff637c'/>
+            <Square title='Square 3' bgcolor='#ff637c'/>
 
         
         </View>
