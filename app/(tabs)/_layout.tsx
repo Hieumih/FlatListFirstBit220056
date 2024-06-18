@@ -37,7 +37,25 @@ export default function TabLayout() {
       <Tabs.Screen
         name="NewFlatList"
         options={{
-          title: 'test flatlist',
+          title: 'Bài tập 1',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="baitap2"
+        options={{
+          title: 'Bài tập 2',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="baitap3"
+        options={{
+          title: 'Bài tập 3',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
           ),
